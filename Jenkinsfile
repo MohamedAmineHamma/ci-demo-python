@@ -1,10 +1,11 @@
 pipeline {
     agent any 
 
-    stage('Tester') {
-            steps {
-                sh 'pytest'
+    stages {
+        stage('Tester') {
+                steps {
+                    sh 'pytest'
+                }
             }
-        }
   }
 }
